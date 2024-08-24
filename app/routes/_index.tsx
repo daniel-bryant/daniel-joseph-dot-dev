@@ -11,7 +11,8 @@ import rails101 from "app/images/rails101.png";
 import hipcamp from "app/images/hipcamp.png";
 import checkr from "app/images/checkr.png";
 import usertesting from "app/images/usertesting.png";
-import github from "app/images/github-mark-white.png";
+import linkedin from "app/images/linkedin.png";
+import github from "app/images/github.png";
 
 const allYears = new Date().getFullYear() - 2009;
 const proYears = new Date().getFullYear() - 2012;
@@ -19,13 +20,19 @@ const proYears = new Date().getFullYear() - 2012;
 export default function Index() {
   return (
     <div className="font-sans">
-      <div className="p-4 flex justify-end bg-japanese-violet">
+      <div className="p-4 flex bg-japanese-violet">
+        <a href="https://www.linkedin.com/in/danielbryant88">
+          <img src={linkedin} width="28" />
+        </a>
+        <div className="grow text-center text-white text-xl font-semibold">
+          Daniel Joseph Bryant
+        </div>
         <a href="https://github.com/daniel-bryant/daniel-joseph-dot-dev">
-          <img src={github} width="25" />
+          <img src={github} width="28" />
         </a>
       </div>
       <div className="p-4">
-        <h1 className="text-3xl">Daniel Joseph Bryant</h1>
+        <h1 className="text-3xl">About</h1>
         <p>
           <a href="/resume.pdf" className="underline">Resume</a>{' • '}
           <a href="tel:+13018210735" className="underline">301-821-0735</a>{' • '}
